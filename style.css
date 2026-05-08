@@ -8,11 +8,11 @@
 :root {
   /* Cores teal com contraste AA garantido */
   --cor-texto: #1f2937;
-  --cor-fundo: #f9fafb;
+  --cor-fundo: #c5c5c5;
   --cor-fundo-card: #ffffff;
   --cor-primaria: #0d9488;
   --cor-primaria-hover: hsl(175, 77%, 26%);
-  --cor-borda: #9ca3af;
+  --cor-borda: #71b374;
   --cor-erro: #b91c1c;
   --cor-foco: #0891b2;
 
@@ -63,7 +63,7 @@ nav a, footer a {
   margin: 0 auto;
   padding: var(--espaco-md);
 }
-article, aside, .edu-box{
+article, aside, .edu-box , #contact-form{
   background: var(--cor-fundo-card);
   padding: var(--espaco-md);
   border: 1px solid var(--cor-borda);
@@ -95,9 +95,55 @@ img{
   border: 1px solid var(--cor-primaria-hover);
 }
 
+/* Dia 2: */
+
+.form-group {
+  margin-bottom: var(--espaco-sm);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+}
+label {
+  justify-self: end;
+  align-self: center;
+
+}
+input, select, textarea{
+  border: 2px solid var(--cor-borda);
+  border-radius: 6px;
+  padding: var(--espaco-sm);
+
+}
+
+input:user-invalid{
+  border: 2pc solid red;
+  background-color: #c76868;
+}
+
+/* Adicione pseudoc.classe do teclado */
+
+#contact-form-focus-within{
+  background: var(--cor-box--)
+}
+.form-actioms{
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--espaco-sm)
+
+
+}
+button
+/* deixe bonito */
+
+
+
 @media screen and (min-width:768px) {
   .layout-wrapper{
-    grid-template-columns: 3fr 1fr ;
-  }
-}
+    grid-template-columns: 2fr 1fr ;
   
+}
+body{
+  background-color: #979ca1;
+}
+
+}
